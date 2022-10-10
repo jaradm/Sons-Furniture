@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+    <head>
+        <title>Sons Furniture :: Order Form</title>
+        <meta charset="UTF-8" />
+        <link rel = "stylesheet" href = "furniture.css" />
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+        <link rel="icon" href="images/Sons Furniture logo with no back.png" type="image/png" />
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="images/Sons Furniture logo with grey back.jpg" alt="Sons Furniture Logo" width="120" height="60" /></a>
+            
+            <nav>
+                <ul>
+                    <li class="borderleft"><a href="live.html">Living Rooms</a>
+                        <ul>
+                            <li><a href="sl.html">Sofa/Loveseat</a></li>
+                            <li><a href="sec.html">Sectionals</a></li>
+                            <li><a href="occ.html">Occasionals</a></li>
+                            <li><a href="stand.html">TV Stands</a></li>
+                            <li><a href="lamp.html">Lamps</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mobileborderright"><a href="dine.html">Dining Rooms</a>
+                        <ul>
+                            <li><a href="dset.html">Dining Sets</a></li>
+                            <li><a href="pub.html">Pub Sets</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="mobileborderleft"><a href="bed.html">Bedrooms</a>
+                        <ul>
+                            <li><a href="bset.html">Bedroom Sets</a></li>
+                            <li><a href="youth.html">Youth</a></li>
+                            <li><a href="mat.html">Mattresses</a></li>
+                            <li><a href="lamp.html">Lamps</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="borderright"><a>Order Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="subHead">
+            <h1>Order Form</h1>
+
+            <p>
+                <span class="tab"></span>If you would like to make an order you can either call to place it
+                over the phone or you can fill this form out and a sales represenitive will either contact you
+                via phone or email to confirm your order and give you a total for it as well. Thank you. 
+            </p>
+        </div>
+
+        <div id = "wrapper">
+            <main>
+                <form name="information" method="post" action="mailto: sonsfurnitureinc@gmail.com" enctype="text/plain">
+                    <div class="onehalf padding">
+                        <div class="bold">Customer Info</div>
+                        <label>Full Name:</label><br />
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" required="required" />
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required="required" /><br />
+
+                
+                        <label>E-mail:</label><br />
+                        <input class="fill" type="text" name="email" id="email" placeholder="customer123@gmail.com" required="required" /><br />
+                    
+
+                
+                        <label>Phone #:</label><br />
+                        <input class="fill" type="text" name="phone" id="phone" placeholder="1 (222) 333-4444" required="required" /><br />
+                    
+
+                
+                        <label>Address:</label><br />
+                        <div class="padding">
+                            <input class="fill" type="text" name="address" id="address" placeholder="Address" required="required" /><br />
+                            <input type="text" name="city" id="city"  placeholder="City" required="required" />
+                            <input type="text" name="region" id="region" placeholder="Region" required="required" />
+                            <input type="text" name="postalCode" id="postalCode" placeholder="Postal Code" required="required" />
+                            <input type="text" name="country" id="country" list="countries" placeholder="Country" required="required" /><br />
+                            <datalist id="countries">
+                                <option value="USA" label="USA"></option>
+                                <option value="Canada" label="Canada"></option>
+                                <option value="Mexico" label="Mexico"></option>
+                                <option value="UK" label="UK"></option>
+                            </datalist>
+                        </div>
+
+                        <div class="bold">Billing Address</div>
+                        <div class="padding">
+                            <input class="fill" type="text" name="billAddress" id="billAddress" placeholder="Address" required="required" /><br />
+                            <input type="text" name="billCity" id="billcity"  placeholder="City" required="required" />
+                            <input type="text" name="billRegion" id="billRegion" placeholder="Region" required="required" />
+                            <input type="text" name="billPostalCode" id="billPostalCode" placeholder="Postal Code" required="required" />
+                            <input type="text" name="billCountry" id="countbillCountry" list="countries" placeholder="Country" required="required" /><br />
+                            <datalist id="billcountries">
+                                <option value="USA" label="USA"></option>
+                                <option value="Canada" label="Canada"></option>
+                                <option value="Mexico" label="Mexico"></option>
+                                <option value="UK" label="UK"></option>
+                            </datalist>
+                        </div>
+                        
+                        <label for="myComments">Comments:</label><br />
+                        <textarea name="myComments" id="myComments" 
+                        placeholder="Please add any additional information you would like us to know here"></textarea><br />
+
+                        <div id="imgOrder">
+                            <img src="images/Sons Furniture logo with grey circle.jpg" alt="Sons Furniture Logo" width="275" height="275"/>
+                        </div>
+                    </div>
+
+                    <div class="onehalf padding">
+                        <span class="bold">Item #1</span>
+                        <div class="item">
+                            <div class="onehalf">
+                                <label for="catag">Item Catagory:</label><br />
+                                <select name="catag" id="catag" required="required">
+                                    <option value="select">Select a Catagory</option>
+                                    <option value="Living Rooms">Living Rooms</option>
+                                    <option value="Dining Rooms">Dining Rooms</option>
+                                    <option value="Bedrooms">Bedrooms</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="subCatag">Sub Catagory:</label><br />
+                                <select name="subCatag" id="subCatag" required="required">
+                                    <option value="select">Select  Sub-Catagory</option>
+                                    <option value="Sofa/Loveseat">Sofa/Loveseat</option>
+                                    <option value="Sectional">Sectional</option>
+                                    <option value="Occasional">Occasional</option>
+                                    <option value="TV Stand">TV Stand</option>
+                                    <option value="Lamps">Lamps</option>
+                                    <option value="Dining Set">Dining Set</option>
+                                    <option value="Pub Set">Pub Set</option>
+                                    <option value="Bedroom Set">Bedroom Sets</option>
+                                    <option value="Youth">Youth</option>
+                                    <option value="Mattress">Mattress</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="itemNum">Item #:</label><br />
+                                <input type="text" name="itemNum" id="itemNum" placeholder="e.g. U395" required="required" />
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="qty">Quantity:</label><br />
+                                <input type="text" name="qty" id="qty" placeholder="e.g. 0" required="required" />
+                            </div>
+
+                            <div>
+                                <label for="dsr">Description:</label><br />
+                                <input class="fill" type="text" name="dsr" id="dsr" placeholder="e.g. Dresser, Mirror and Queen Bed" required="required" />
+                            </div>
+                        </div>
+
+                        <span class="bold">Item #2</span>
+                        <div class="item">
+                            <div class="onehalf">
+                                <label for="catag">Item Catagory:</label><br />
+                                <select name="catag" id="catag2">
+                                    <option value="select">Select a Catagory</option>
+                                    <option value="Living Rooms">Living Rooms</option>
+                                    <option value="Dining Rooms">Dining Rooms</option>
+                                    <option value="Bedrooms">Bedrooms</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="subCatag">Sub Catagory:</label><br />
+                                <select name="subCatag" id="subCatag2">
+                                    <option value="select">Select  Sub-Catagory</option>
+                                    <option value="Sofa/Loveseat">Sofa/Loveseat</option>
+                                    <option value="Sectional">Sectional</option>
+                                    <option value="Occasional">Occasional</option>
+                                    <option value="TV Stand">TV Stand</option>
+                                    <option value="Lamps">Lamps</option>
+                                    <option value="Dining Set">Dining Set</option>
+                                    <option value="Pub Set">Pub Set</option>
+                                    <option value="Bedroom Set">Bedroom Sets</option>
+                                    <option value="Youth">Youth</option>
+                                    <option value="Mattress">Mattress</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="itemNum">Item #:</label><br />
+                                <input type="text" name="itemNum" id="itemNum2" placeholder="e.g. U395" />
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="qty">Quantity:</label><br />
+                                <input type="text" name="qty" id="qty2" placeholder="e.g. 0" />
+                            </div>
+
+                            <div>
+                                <label for="dsr2">Description:</label><br />
+                                <input class="fill" type="text" name="dsr" id="dsr2" placeholder="e.g. Dresser, Mirror and Queen Bed" required="required" />
+                            </div>
+                        </div>
+
+                        <span class="bold">Item #3</span>
+                        <div class="item">
+                            <div class="onehalf">
+                                <label for="catag">Item Catagory:</label><br />
+                                <select name="catag" id="catag3">
+                                    <option value="select">Select a Catagory</option>
+                                    <option value="Living Rooms">Living Rooms</option>
+                                    <option value="Dining Rooms">Dining Rooms</option>
+                                    <option value="Bedrooms">Bedrooms</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="subCatag">Sub Catagory:</label><br />
+                                <select name="subCatag" id="subCatag3">
+                                    <option value="select">Select  Sub-Catagory</option>
+                                    <option value="Sofa/Loveseat">Sofa/Loveseat</option>
+                                    <option value="Sectional">Sectional</option>
+                                    <option value="Occasional">Occasional</option>
+                                    <option value="TV Stand">TV Stand</option>
+                                    <option value="Lamps">Lamps</option>
+                                    <option value="Dining Set">Dining Set</option>
+                                    <option value="Pub Set">Pub Set</option>
+                                    <option value="Bedroom Set">Bedroom Sets</option>
+                                    <option value="Youth">Youth</option>
+                                    <option value="Mattress">Mattress</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="itemNum">Item #:</label><br />
+                                <input type="text" name="itemNum" id="itemNum3" placeholder="e.g. U395" />
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="qty">Quantity:</label><br />
+                                <input type="text" name="qty" id="qty3" placeholder="e.g. 0" />
+                            </div>
+
+                            <div>
+                                <label for="dsr3">Description:</label><br />
+                                <input class="fill" type="text" name="dsr" id="dsr3" placeholder="e.g. Dresser, Mirror and Queen Bed" required="required" />
+                            </div>
+                        </div>
+
+                        <span class="bold">Item #4</span>
+                        <div class="item">
+                            <div class="onehalf">
+                                <label for="catag">Item Catagory:</label><br />
+                                <select name="catag" id="catag4">
+                                    <option value="select">Select a Catagory</option>
+                                    <option value="Living Rooms">Living Rooms</option>
+                                    <option value="Dining Rooms">Dining Rooms</option>
+                                    <option value="Bedrooms">Bedrooms</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="subCatag">Sub Catagory:</label><br />
+                                <select name="subCatag" id="subCatag4">
+                                    <option value="select">Select  Sub-Catagory</option>
+                                    <option value="Sofa/Loveseat">Sofa/Loveseat</option>
+                                    <option value="Sectional">Sectional</option>
+                                    <option value="Occasional">Occasional</option>
+                                    <option value="TV Stand">TV Stand</option>
+                                    <option value="Lamps">Lamps</option>
+                                    <option value="Dining Set">Dining Set</option>
+                                    <option value="Pub Set">Pub Set</option>
+                                    <option value="Bedroom Set">Bedroom Sets</option>
+                                    <option value="Youth">Youth</option>
+                                    <option value="Mattress">Mattress</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="itemNum">Item #:</label><br />
+                                <input type="text" name="itemNum" id="itemNum4" placeholder="e.g. U395" />
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="qty">Quantity:</label><br />
+                                <input type="text" name="qty" id="qty4" placeholder="e.g. 0" />
+                            </div>
+
+                            <div>
+                                <label for="dsr4">Description:</label><br />
+                                <input class="fill" type="text" name="dsr" id="dsr4" placeholder="e.g. Dresser, Mirror and Queen Bed" required="required" />
+                            </div>
+                        </div>
+
+                        <span class="bold">Item #5</span>
+                        <div class="item">
+                            <div class="onehalf">
+                                <label for="catag">Item Catagory:</label><br />
+                                <select name="catag" id="catag5">
+                                    <option value="select">Select a Catagory</option>
+                                    <option value="Living Rooms">Living Rooms</option>
+                                    <option value="Dining Rooms">Dining Rooms</option>
+                                    <option value="Bedrooms">Bedrooms</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="subCatag">Sub Catagory:</label><br />
+                                <select name="subCatag" id="subCatag5">
+                                    <option value="select">Select  Sub-Catagory</option>
+                                    <option value="Sofa/Loveseat">Sofa/Loveseat</option>
+                                    <option value="Sectional">Sectional</option>
+                                    <option value="Occasional">Occasional</option>
+                                    <option value="TV Stand">TV Stand</option>
+                                    <option value="Lamps">Lamps</option>
+                                    <option value="Dining Set">Dining Set</option>
+                                    <option value="Pub Set">Pub Set</option>
+                                    <option value="Bedroom Set">Bedroom Sets</option>
+                                    <option value="Youth">Youth</option>
+                                    <option value="Mattress">Mattress</option>
+                                </select>
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="itemNum">Item #:</label><br />
+                                <input type="text" name="itemNum" id="itemNum5" placeholder="e.g. U395" />
+                            </div>
+
+                            <div class="onehalf">
+                                <label for="qty">Quantity:</label><br />
+                                <input type="text" name="qty" id="qty5" placeholder="e.g. 0" />
+                            </div>
+
+                            <div class="orderPadd">
+                                <label for="dsr5">Description:</label><br />
+                                <input class="fill" type="text" name="dsr" id="dsr5" placeholder="e.g. Dresser, Mirror and Queen Bed" required="required" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Send Now" class="center" />
+                </form>
+            </main>
+        </div>
+
+        <footer>
+            Copyright &#xA9; 2021 Sons Furniture Inc.<br />
+            1000 S Kostner Ave, Chicago, IL 60624<br />
+            <a id="mobile" href ="tel:708-543-4013">Phone: (708) 543-4013</a>
+            <span id="desktop">Phone: (708) 543-4013</span><br /> 
+            <a href="mailto:sonsfurnitureinc@gmail.com">sonsfurnitureinc@gmail.com</a>
+        </footer>
+    </body>
+</html>
